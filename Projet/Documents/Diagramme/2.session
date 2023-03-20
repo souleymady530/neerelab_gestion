@@ -1,0 +1,12 @@
+window_sizes 1366 705 227 1134 605 54
+
+diagrams
+  active  classdiagram_ref 128002 // Diagramme
+    1134 605 100 A4 0 0
+end
+show_stereotypes
+selected class_ref 142978 // Payement
+open
+  classview_ref 134530 // Vue Diagamme de classe
+end
+end

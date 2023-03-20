@@ -1,0 +1,194 @@
+format 213
+
+classcanvas 128002 class_ref 128002 // Manager
+  classdiagramsettings member_max_width 0 end
+  xyzwh 107 198 2000 61 47
+end
+classcanvas 128130 class_ref 128130 // Vendeur
+  classdiagramsettings member_max_width 0 end
+  xyzwh 16 208 2000 79 97
+end
+classcanvas 128258 class_ref 128258 // Article
+  classdiagramsettings member_max_width 0 end
+  xyzwh 219 330 2000 95 129
+end
+classcanvas 128386 class_ref 128386 // Categorie
+  classdiagramsettings member_max_width 0 end
+  xyzwh 44 363 2000 67 67
+end
+classcanvas 128514 class_ref 128514 // Magasin
+  classdiagramsettings member_max_width 0 end
+  xyzwh 209 125 2000 87 49
+end
+classcanvas 128642 class_ref 128642 // Client
+  classdiagramsettings member_max_width 0 end
+  xyzwh 587 223 2005 89 73
+end
+classcanvas 134146 class_ref 129026 // Proprietaire
+  classdiagramsettings member_max_width 0 end
+  xyzwh 210 2 2005 81 63
+end
+classcanvas 134402 class_ref 129154 // Commande
+  classdiagramsettings member_max_width 0 end
+  xyzwh 352 224 2000 121 81
+end
+classcanvas 135170 class_ref 128770 // Facture
+  classdiagramsettings member_max_width 0 end
+  xyzwh 373 94 2000 91 65
+end
+classcanvas 140034 class_ref 129410 // PersonnePhysique
+  classdiagramsettings member_max_width 0 end
+  xyzwh 657 70 2000 119 97
+end
+classcanvas 140162 class_ref 129538 // Entreprise
+  classdiagramsettings member_max_width 0 end
+  xyzwh 596 353 2000 85 65
+end
+classcanvas 140546 class_ref 129666 // Devis
+  classdiagramsettings member_max_width 0 end
+  xyzwh 425 455 2000 107 81
+end
+classcanvas 142210 class_ref 129794 // Fournisseur
+  classdiagramsettings member_max_width 0 end
+  xyz 452 14 2000
+end
+textcanvas 142594 "dispose"
+  xyzwh 297 17 2011 38 14
+textcanvas 142722 "Possede"
+  xyzwh 261 73 2011 42 14
+textcanvas 142850 "Gère"
+  xyzwh 183 204 2006 38 15
+textcanvas 142978 "Possede"
+  xyzwh 141 369 2006 42 14
+textcanvas 143106 "fait"
+  xyzwh 510 244 2011 38 15
+textcanvas 143234 "Demander un"
+  xyzwh 542 473 2006 91 15
+classcanvas 143874 class_ref 136322 // Licence
+  classdiagramsettings member_max_width 0 end
+  xyzwh 12 9 2000 93 83
+end
+textcanvas 144386 "paye"
+  xyzwh 136 27 2011 24 14
+classcanvas 144514 class_ref 142850 // ResponsableMagasin
+  classdiagramsettings member_max_width 0 end
+  xyz 16 129 2006
+end
+classcanvas 144898 class_ref 142978 // Payement
+  classdiagramsettings member_max_width 0 end
+  xyzwh 411 351 2000 85 65
+end
+classcanvas 145282 class_ref 143106 // Caissier
+  classdiagramsettings member_max_width 0 end
+  xyz 104 264 2005
+end
+relationcanvas 131586 relation_ref 129794 // <composition>
+  decenter_begin 609
+  from ref 128514 z 2001 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137346 relation_ref 132226 // <composition>
+  geometry HVr
+  decenter_begin 344
+  from ref 128514 z 2001 to point 236 253
+  line 142082 z 2001 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 137986 relation_ref 132610 // <composition>
+  geometry HVr
+  decenter_begin 453
+  decenter_end 230
+  from ref 134402 z 2001 to point 404 357
+  line 141570 z 2001 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 138498 relation_ref 132994 // <aggregation>
+  decenter_end 449
+  from ref 134402 z 2001 to ref 135170
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 139522 relation_ref 133250 // <association>
+  from ref 134146 z 2006 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 225 106 3000 no_multiplicity_b
+end
+relationcanvas 139650 relation_ref 133378 // <association>
+  from ref 128258 z 2001 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 120 402 3000 multiplicity_b_pos 192 401 3000
+end
+relationcanvas 139906 relation_ref 133506 // <association>
+  from ref 134402 z 2006 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 570 266 3000 multiplicity_b_pos 482 268 3000
+end
+relationcanvas 140290 relation_ref 133634 // <generalisation>
+  geometry HVr
+  decenter_end 488
+  from ref 140034 z 2006 to point 713 256
+  line 141442 z 2006 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 140418 relation_ref 133762 // <generalisation>
+  decenter_end 532
+  from ref 140162 z 2006 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 140674 relation_ref 133890 // <association>
+  geometry HVr
+  from ref 140162 z 2001 to point 635 492
+  line 143746 z 2001 to ref 140546
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 141186 relation_ref 134146 // <composition>
+  geometry VHr
+  from ref 140546 z 2001 to point 261 492
+  line 143618 z 2001 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 142338 relation_ref 134274 // <association>
+  from ref 134146 z 2006 to ref 142210
+  no_role_a no_role_b
+  multiplicity_a_pos 425 40 3000 no_multiplicity_b
+end
+relationcanvas 144002 relation_ref 140802 // <association>
+  decenter_begin 759
+  from ref 134146 z 2006 to ref 143874
+  no_role_a no_role_b
+  multiplicity_a_pos 114 56 3000 multiplicity_b_pos 193 56 3000
+end
+relationcanvas 144770 relation_ref 147458 // <composition>
+  from ref 128514 z 2007 to ref 144514
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 145154 relation_ref 147714 // <composition>
+  decenter_begin 800
+  from ref 134402 z 2001 to ref 144898
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 145538 relation_ref 147970 // <composition>
+  geometry HVr
+  from ref 128514 z 2006 to point 250 281
+  line 145922 z 2006 to ref 145282
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 145666 relation_ref 148098 // <composition>
+  geometry HVr
+  decenter_begin 172
+  from ref 128514 z 2001 to point 221 218
+  line 145794 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end
